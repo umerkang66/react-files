@@ -1,0 +1,26 @@
+{
+  "name": "authentication-backend",
+  "version": "1.0.0",
+  "description": "This is a express-node server for frontend authentication react application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Umer Kang",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^6.1.6",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

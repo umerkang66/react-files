@@ -1,0 +1,37 @@
+{
+  "name": "next-typescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "tailwindInit": "tailwindcss init -p"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.24",
+    "@types/react-dom": "18.0.8",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.1",
+    "gray-matter": "^4.0.3",
+    "js-search": "^2.0.0",
+    "next": "13.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark": "^14.0.2",
+    "remark-gfm": "^3.0.1",
+    "remark-html": "^15.0.1",
+    "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.8",
+    "@types/js-search": "^1.4.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}

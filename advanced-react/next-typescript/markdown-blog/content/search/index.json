@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Markdown Extensive Example",
+    "description": "Learn how to write markdown",
+    "slug": "markdown-full-example",
+    "category": "blogs"
+  },
+  {
+    "title": "NFT Marketplace in React, Typescript & Solidity - Full Guide",
+    "description": "Learn how to use React / Next JS, Solidity, and Pinata(IPFS) to create NFT marketplace on Ethereum. All In Typescript.",
+    "slug": "nft-marketplace-in-react-js-next-typescript-full-guide",
+    "category": "blogs"
+  },
+  {
+    "title": "Rust & WebAssembly with JS (TS) - The Practical Guide",
+    "description": "Learn how to code in Rust! Compile the code to WebAssembly, prepare JS/TS frontend and finish the course by creating the practical Snake game that can run in any browser.",
+    "slug": "rust-webassembly-with-js-ts-the-practical-guide",
+    "category": "blogs"
+  },
+  {
+    "title": "Unity 2D With C# - Complete Game Dev Course",
+    "description": "Create the complete 2D survival game in Unity with C#. Learn best practices and patterns.",
+    "slug": "unity-2d-with-c-complete-game-dev-course",
+    "category": "blogs"
+  },
+  {
+    "title": "Web Development & Code 101 - Full Guide [2022]",
+    "description": "Learn programming in JS language, HTML, and CSS. Create a Web Application made in React JS. The path to the final project includes many assignments, code exercises, and challenges.",
+    "slug": "web-development-and-coding-full-course",
+    "category": "blogs"
+  },
+  {
+    "title": "Software Engineer Siemens",
+    "description": "Working as C++ and C# software engineer",
+    "slug": "software-engineer-siemens",
+    "category": "portfolios"
+  }
+]

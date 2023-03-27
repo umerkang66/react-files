@@ -1,0 +1,216 @@
+{
+  "posts": [
+    {
+      "content": "First Post",
+      "createdAt": 1672502395167,
+      "id": 1
+    },
+    {
+      "content": "Second Post",
+      "createdAt": 1672502399468,
+      "id": 2
+    },
+    {
+      "content": "Third Post",
+      "createdAt": 1672502428048,
+      "id": 3
+    },
+    {
+      "content": "Fourth Post",
+      "createdAt": 1672502435382,
+      "id": 4
+    },
+    {
+      "content": "Fifth Post",
+      "createdAt": 1672502444779,
+      "id": 5
+    },
+    {
+      "content": "Sixth Post",
+      "createdAt": 1672502450524,
+      "id": 6
+    },
+    {
+      "content": "Seventh Post",
+      "createdAt": 1672502454097,
+      "id": 7
+    },
+    {
+      "content": "Eight Post",
+      "createdAt": 1672502458618,
+      "id": 8
+    },
+    {
+      "content": "kang did this",
+      "createdAt": 1672557510282,
+      "id": 9
+    },
+    {
+      "content": "This is great",
+      "createdAt": 1672557609600,
+      "id": 10
+    },
+    {
+      "content": "umer did this",
+      "createdAt": 1672557613441,
+      "id": 11
+    },
+    {
+      "content": "kang did this",
+      "createdAt": 1672557779212,
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "This is a comment of post 1",
+      "postId": 1,
+      "createdAt": 1625745022480
+    },
+    {
+      "id": 3,
+      "content": "This is a comment of post 1",
+      "postId": 1,
+      "createdAt": 1625745022490
+    },
+    {
+      "id": 2,
+      "content": "This is a comment of post 2",
+      "postId": 2,
+      "createdAt": 1625745022495
+    },
+    {
+      "id": 5,
+      "content": "This is a comment of post 2",
+      "createdAt": 1625745022496,
+      "postId": 2
+    },
+    {
+      "id": 7,
+      "content": "This is a comment of post 3",
+      "postId": 3,
+      "createdAt": 1625745022499
+    },
+    {
+      "content": "This is the second comment of post 3",
+      "createdAt": 1672463289966,
+      "postId": "3",
+      "id": 8
+    },
+    {
+      "content": "This is the third comment of post 3",
+      "createdAt": 1672463383008,
+      "postId": "3",
+      "id": 9
+    },
+    {
+      "content": "This is the fourth comment of post 3",
+      "createdAt": 1672463509358,
+      "postId": "3",
+      "id": 10
+    },
+    {
+      "content": "First Comment of this post",
+      "createdAt": 1672464160082,
+      "postId": "4",
+      "id": 11
+    },
+    {
+      "content": "ReactJs is great",
+      "createdAt": 1672501243996,
+      "postId": "7",
+      "id": 12
+    },
+    {
+      "content": "comments",
+      "createdAt": 1672501296997,
+      "postId": "7",
+      "id": 13
+    },
+    {
+      "content": "NextJs is great",
+      "createdAt": 1672501322398,
+      "postId": "7",
+      "id": 14
+    },
+    {
+      "content": "First comment",
+      "createdAt": 1672556285616,
+      "postId": "8",
+      "id": 15
+    },
+    {
+      "content": "umer did this",
+      "createdAt": 1672556384413,
+      "postId": "8",
+      "id": 16
+    },
+    {
+      "content": "first comment",
+      "createdAt": 1672557792273,
+      "postId": "12",
+      "id": 17
+    },
+    {
+      "content": "comment",
+      "createdAt": 1672557838716,
+      "postId": "11",
+      "id": 18
+    },
+    {
+      "content": "kang did this",
+      "createdAt": 1672557844399,
+      "postId": "11",
+      "id": 19
+    },
+    {
+      "content": "this is great",
+      "createdAt": 1672557979974,
+      "postId": "11",
+      "id": 20
+    },
+    {
+      "content": "umer did this",
+      "createdAt": 1672557986100,
+      "postId": "11",
+      "id": 21
+    },
+    {
+      "content": "this is great",
+      "createdAt": 1672557990212,
+      "postId": "11",
+      "id": 22
+    },
+    {
+      "content": "umer did this",
+      "createdAt": 1672557993154,
+      "postId": "11",
+      "id": 23
+    },
+    {
+      "content": "umer did this",
+      "createdAt": 1672558015134,
+      "postId": "11",
+      "id": 24
+    },
+    {
+      "content": "kang did this",
+      "createdAt": 1672558017826,
+      "postId": "11",
+      "id": 25
+    },
+    {
+      "content": "ah this is great",
+      "createdAt": 1672558020995,
+      "postId": "11",
+      "id": 26
+    },
+    {
+      "content": "becre\n",
+      "createdAt": 1672558025495,
+      "postId": "11",
+      "id": 27
+    }
+  ]
+}
