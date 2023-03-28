@@ -24,5 +24,6 @@ service cloud.firestore {
   }
 }
 
+// yarn build
 // npx firebase deploy
 // npx firebase deploy --only firestore
