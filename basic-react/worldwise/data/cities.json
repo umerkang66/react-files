@@ -47,6 +47,18 @@
         "lng": "-2.13128394200588"
       },
       "id": 98443198
+    },
+    {
+      "cityName": "Chichawatni",
+      "country": "Pakistan",
+      "emoji": "🇵🇰",
+      "date": "2023-07-02T07:08:27.948Z",
+      "notes": "It was great.",
+      "position": {
+        "lat": "30.44286503859875",
+        "lng": "72.66396045684816"
+      },
+      "id": 98443199
     }
   ]
 }
