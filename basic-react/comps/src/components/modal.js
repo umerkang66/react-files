@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 export default function Modal({ children, actionBar, onClose }) {
   useEffect(() => {
+    // this is to remove the scrollbar from document.
     document.body.classList.add('overflow-hidden');
 
     return () => {
