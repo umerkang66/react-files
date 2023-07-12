@@ -5,6 +5,7 @@ import Loader from './Loader';
 import CartOverview from '../features/cart/CartOverview';
 
 function AppLayout() {
+  // global navigation (loading) state.
   const { state } = useNavigation();
   const isLoading = state === 'loading';
 
