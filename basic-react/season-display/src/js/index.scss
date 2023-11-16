@@ -1,0 +1,22 @@
+.time {
+  height: 100vh;
+  background-image: linear-gradient(to right top, #d9ebf5, #c7e7e4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+
+  background-color: #4158d0;
+  background: -webkit-linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #d6a03b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

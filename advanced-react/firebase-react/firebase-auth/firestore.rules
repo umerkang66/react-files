@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  // inside the wildcard (**) database (any database)
+  match /databases/{database}/documents {
+    // inside the database, the 'transactions' collection 
+    match /transactions/{document=**} {
+      // don't allow create if user is unauthenticated
+      allow create: if request.auth != null;
+      // Authorization
+      // if currentUser.uid != resource.data.uid, then don't allow it
+      allow read, update, delete: if request.auth.uid == resource.data.uid;
+    }
+  }
+}

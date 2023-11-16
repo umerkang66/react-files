@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{user_id} {
+      // match any documents inside the user collection and store its user_id
+
+      // if user is not authenticated, don't allow the creation, and read of user
+      allow read, create: if request.auth != null;
+
+      // if user is not authorized, don't allow the updation of user
+      // only if they own the document
+      allow update: if request.auth.uid == user_id;
+    }
+
+    match /projects/{project_id} {
+      // if user is not authenticated, don't allow the creation, and read of document
+      // they can update it even the project is not owned by them
+      allow read, create, update: if request.auth != null;
+
+      // only allow deletion of document, if user owned it
+      // 'resource' is the current document
+      allow delete: if request.auth.uid == resource.data.uid
+    }
+  }
+}
+
+// yarn build
+// npx firebase deploy
+// npx firebase deploy --only firestore

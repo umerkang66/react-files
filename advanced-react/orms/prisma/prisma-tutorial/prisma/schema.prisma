@@ -1,0 +1,64 @@
+// https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String           @id @default(auto()) @map("_id") @db.ObjectId
+  name           String
+  email          String           @unique
+  role           Role             @default(USER)
+  age            Int
+  writtenPosts   Post[]           @relation("writtenPosts")
+  favouritePosts Post[]           @relation("favouritePosts")
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  preferences    UserPreferences? @relation(fields: [preferencesId], references: [id])
+  preferencesId  String           @unique @db.ObjectId
+
+  // if two users have same name and same age, they can't be created, its like AND relation,
+  // if users have same name but different age, and vice versa, users can be created
+  @@unique([age, name])
+}
+
+model UserPreferences {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  emailUpdates Boolean
+  user         User?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Post {
+  id            String     @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  averageRating Float
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  author        User       @relation("writtenPosts", fields: [authorId], references: [id])
+  authorId      String     @db.ObjectId
+  faouritedBy   User?      @relation("favouritePosts", fields: [faouritedById], references: [id])
+  faouritedById String?    @db.ObjectId
+  categories    Category[] @relation(fields: [categoryIds], references: [id])
+  categoryIds   String[]   @db.ObjectId
+}
+
+model Category {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String   @unique
+  posts     Post[]   @relation(fields: [postIds], references: [id])
+  postIds   String[] @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  USER
+  ADMIN
+}

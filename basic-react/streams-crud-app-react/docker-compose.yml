@@ -1,0 +1,23 @@
+version: '3'
+services:
+  # all the services in the docker-compose will be connected through same network, so we can access the other services using just their name in network access
+  api:
+    build:
+      dockerfile: Dockerfile
+      # look for "Dockerfile" in ./server
+      context: ./server
+  client:
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    # nginx runs on default port 80
+    ports:
+      - '3000:80'
