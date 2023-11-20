@@ -1,5 +1,5 @@
 import { Button } from '@nextui-org/react';
 
 export default function Home() {
-  return <Button>Application</Button>
+  return <Button>Application</Button>;
 }
