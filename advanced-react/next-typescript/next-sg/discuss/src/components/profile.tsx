@@ -3,9 +3,9 @@
 import { useSession } from 'next-auth/react';
 
 function Profile() {
-  const session = useSession();
+  const { data: session } = useSession();
 
-  if (session.data?.user) {
+  if (session?.user) {
     return <div>From Client: user is signed in</div>;
   }
 
