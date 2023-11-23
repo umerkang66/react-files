@@ -28,6 +28,7 @@ export const {
     async session({ session, user }) {
       // verify who our user in our application
       if (session && user) {
+        // session already have other three user properties, but didn't have id in it
         session.user!.id = user.id;
       }
       return session;
