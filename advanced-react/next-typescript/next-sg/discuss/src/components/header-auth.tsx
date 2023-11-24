@@ -13,10 +13,12 @@ import { useSession } from 'next-auth/react';
 import * as actions from '@/actions';
 
 function HeaderAuth() {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
 
   let authContent: React.ReactNode;
-  if (session?.user) {
+  if (status === 'loading') {
+    authContent = null;
+  } else if (session?.user) {
     authContent = (
       <Popover placement="left">
         <PopoverTrigger>
