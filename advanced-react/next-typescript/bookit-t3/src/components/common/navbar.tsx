@@ -51,10 +51,6 @@ const Navbar: FC<Props> = () => {
   if (user?.role === "ADMIN") {
     selectorOptions.push(
       ...[
-        {
-          title: "Dashboard",
-          onClick: () => void router.push("/admin/dashboard"),
-        },
         { title: "Rooms", onClick: () => void router.push("/admin/rooms") },
         { title: "Reviews", onClick: () => void router.push("/admin/reviews") },
         { title: "Users", onClick: () => void router.push("/admin/users") },
