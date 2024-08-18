@@ -69,6 +69,8 @@ const handler: NextApiHandler = async (req, res) => {
       })
     ).id;
 
+    console.log('-------------------UMER DID THIS-------------------------');
+
     await db.booking.create({
       data: {
         roomId,
