@@ -48,6 +48,10 @@ const Reviews: NextPage<Props> = () => {
       select: (data) =>
         data.reviews.map((review) => ({
           ...review,
+          reviewComment:
+            reviewComment.length < 25
+              ? reviewComment
+              : reviewComment.slice(25) + "...",
           roomId: review.roomId!,
           bookingId: review.bookingId!,
           actions: createActions({

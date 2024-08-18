@@ -35,10 +35,10 @@ export function getPaginationQueries(ctx: { query: ParsedUrlQuery }) {
 }
 
 export function pause(seconds: number) {
-  return new Promise((resolve) => setTimeout(() => resolve, seconds * 1000));
+  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
 }
 
-export const getDaysArray = function (input: Date[]) {
+export function getDaysArray(input: Date[]) {
   const [s, e] = input;
   const a: Date[] = [];
 
@@ -47,4 +47,4 @@ export const getDaysArray = function (input: Date[]) {
   }
 
   return a;
-};
+}
