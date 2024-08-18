@@ -49,9 +49,9 @@ const Reviews: NextPage<Props> = () => {
         data.reviews.map((review) => ({
           ...review,
           reviewComment:
-            review.reviewComment.length < 25
+            review.reviewComment.length < 15
               ? review.reviewComment
-              : review.reviewComment.slice(25) + "...",
+              : review.reviewComment.slice(0, 15) + "...",
           roomId: review.roomId!,
           bookingId: review.bookingId!,
           actions: createActions({
